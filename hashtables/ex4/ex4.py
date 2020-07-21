@@ -4,9 +4,9 @@ def has_negatives(a):
     """
     cache = {}  # store numbers
     result = []  # create list to store positive numbers
-    for num in a:  # loop through each number
+    for num in a:  # loop through each number in array
         cache[num] = num
-        if num != 0 and -num in cache:  # if number is not 0 or negative number,
+        if num != 0 and -num in cache:  # if number is not 0 and is negative number,
             result.append(abs(num))  # append absolute number to list of result
 
     return result
